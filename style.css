@@ -1,0 +1,300 @@
+
+input::placeholder{
+    font-size: 20px;
+}
+
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    background-color: #C0DEFF;
+    
+}
+ 
+img{
+    width:40px;
+    height: 40px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ADA2FF;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+}
+
+.float2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/**/
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:20px;
+    padding:0 50px;
+}
+
+.flex-items{
+    width:250px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #181D31;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 50px black;
+    
+   
+}
+
+.scroll-items{
+    width:266px;
+    height: 132px;
+    overflow:auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.item-head{
+    background-color: #181D31;
+    text-align: center;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color:white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.date{
+    background-color:#181D31;
+    color: white;
+    margin:0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.flex-items-add{
+    position:absolute;
+    top:250px;
+    left:70px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+
+}
+
+
+.flex-items-cancel{
+    position:absolute;
+    top:250px;
+    right:70px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+
+}
+
+.item-content{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5px;
+
+   
+}
+
+.item-span{
+    font-size: 24px;
+}
+.mark-btn{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    
+    
+    cursor: pointer;
+    
+}
+
+
+
+
+
+/* pop-up messages */
+
+.pop2,.pop1{
+    display: none;
+    
+}
+
+
+
+.pop1,.pop2{
+    width:355px;
+    height: 209px;
+    position: fixed;
+    box-sizing: border-box;
+    top:104px;
+    left:424px;
+    z-index: 1;
+    background-color: #B7C4CF;
+   
+   
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px black;
+   
+
+  
+    border: 2px solid #181D31;
+   
+    background-size: cover;
+}
+
+.pop-head1,.pop-head2{
+    text-align: center;
+    background-color: #181D31;
+    color: white;
+    padding:20px 0;
+    margin: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+}
+
+.task,.item{
+    width:200px;
+    
+    padding:5px 20px;
+    font-size: 25px;
+  
+    border-radius: 10px;
+    outline: none;
+    border:2px solid #181D31;
+    margin-bottom: 15px;
+}
+
+.pop1-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.add-task,.add-item{
+    border:none;
+    background-color: #181D31;
+    color: white;
+    font-size: 18px;
+    padding:5px 28px;
+    border-radius: 20px;
+    margin-right: 59px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.del-task,.del-item{
+    border:none;
+    background-color:#181D31;
+    color: white;
+    font-size: 18px;
+    padding:5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.add-task:hover,.add-item:hover{
+    background-color: black;
+}
+
+.del-task:hover,.del-item:hover{
+    background-color: black;
+}
+
+
+/* media query for mobile and tablet view */
+
+
+@media screen and (max-width: 480px){
+
+    .pop1,.pop2{
+        width: 300px;
+        height: 200px;
+        top:100px;
+        left: 84px;
+    }
+
+
+    .flex-items{
+        width:180px;
+        height: 236px;
+    }
+
+    .scroll-items{
+        width:180px;
+        height: 81px;
+    }
+
+    .flex-items-add{
+        top:188px;
+        left:17px;
+    }
+    .flex-items-cancel{
+        top:188px;
+        right:17px;
+    }
+
+    .mark-btn{
+        width:15px;
+        height: 15px;
+    }
+
+    .flex-items-add{
+        width: 30px;
+        height: 30px;
+    }
+
+    .flex-items-cancel{
+        width: 30px;
+        height: 30px;
+    }
+
+   
+
+    .item-span{
+        font-size: 15px;
+    }
+
+}
+    
+
+
+
+

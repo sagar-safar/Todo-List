@@ -1,0 +1,99 @@
+<!-- This is the doctype declaration, which specifies that this is an HTML document -->
+<!DOCTYPE html>
+
+<!-- The html element is the root element of an HTML page -->
+<html lang="en">
+
+<!-- The head element contains metadata about the page -->
+<head>
+    <!-- The meta charset attribute specifies the character set used in the page -->
+    <meta charset="UTF-8">
+    <!-- The meta http-equiv attribute specifies the default type of content to display -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The meta name attribute specifies metadata about the page, such as the viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The link element is used to link to external resources, such as a stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- The title element specifies the title of the page, which is displayed in the browser's title bar -->
+    <title>Todo List</title>
+</head>
+
+<!-- The body element contains the content of the page -->
+<body>
+   <!-- The div element is used as a container for HTML elements -->
+   <!-- This div element represents the first pop-up window for adding tasks -->
+   <div class="pop1">
+      <!-- The h2 element represents a level 2 heading -->
+      <h2 class="pop-head1">Add Task</h2>
+      <!-- Another div element that contains the input box and buttons for adding and closing the pop-up window -->
+      <div class="input-box">
+         <!-- The input element is used to create a text input field -->
+         <input type="text" class="task" placeholder="Enter the Task : " required>
+         <!-- Another div element that contains the buttons for adding and closing the pop-up window -->
+         <div class="pop1-box">
+            <!-- The button element is used to create a clickable button -->
+            <button class="add-task">Add</button>
+            <button class="del-task">Close</button>
+         </div>
+      </div>
+   </div>
+
+   <!-- This div element represents the second pop-up window for adding items -->
+   <div class="pop2">
+      <!-- The h2 element represents a level 2 heading -->
+      <h2 class="pop-head2">Add Items</h2>
+      <!-- Another div element that contains the input box and buttons for adding and closing the pop-up window -->
+      <div class="input-box">
+         <!-- The input element is used to create a text input field -->
+         <input type="text" class="item" placeholder="Enter the Item : " required>
+         <!-- Another div element that contains the buttons for adding and closing the pop-up window -->
+         <div class="pop1-box">
+            <!-- The button element is used to create a clickable button -->
+            <button class="add-item">Add</button>
+            <button class="del-item">Close</button>
+         </div>
+      </div>
+   </div>
+   
+  
+      
+
+
+
+      <!-- This div element represents the main content area of the to-do list -->
+      <div class="blur">
+         <!-- The div element with the class "header" represents the header of the to-do list -->
+         <div class="header">
+            <!-- The h1 element represents a level 1 heading -->
+            <h1 class="float1"></h1>
+            <!-- The div element with the class "float2" contains the "Add" button for adding tasks and items -->
+            <div class="float2">
+               <!-- The span element is used to group inline-level elements and apply styles to them -->
+               <span>Add</span>
+               <!-- The a element is used to create a hyperlink to another webpage or a specific location on the current page -->
+               <a href="#" class="add">
+                  <!-- The img element is used to embed an image in the webpage -->
+                  <img src="./assest/img1.png" alt="">
+               </a>
+            </div>
+         </div>
+      
+         <!-- This br element represents a line break -->
+         <br>
+      
+         <!-- The div element with the class "flex-container" is likely used to display the list of tasks and items -->
+         <div class="flex-container"></div>
+      </div>
+      
+      <!-- These script elements are used to include external JavaScript files in the webpage -->
+      <!-- The main.js file is likely used to handle the logic for adding and removing tasks and items -->
+      <script src="./main.js"></script>
+      <!-- The TypeEffect.js file may be used to add a visual effect to the title -->
+      <script src="./TypeEffect.js"></script>
+      
+      <!-- The body element is closed here -->
+      </body>
+      
+      <!-- The html element is closed here -->
+      </html>
+      
