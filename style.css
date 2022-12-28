@@ -116,7 +116,8 @@ img{
 }
 
 .item-content{
-    width: 250px;
+    width: 248px;
+    height: 28px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -242,7 +243,7 @@ img{
 /* media query for mobile and tablet view */
 
 
-@media screen and (max-width: 480px){
+@media screen and ( min-width:360px ) and   ( max-width: 480px){
 
     .pop1,.pop2{
         width: 300px;
@@ -259,7 +260,13 @@ img{
 
     .scroll-items{
         width:180px;
+       
+       
         height: 81px;
+    }
+
+    .item-content{
+        width:180px;
     }
 
     .flex-items-add{
